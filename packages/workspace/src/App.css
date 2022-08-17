@@ -1,0 +1,21 @@
+.App {
+  display: block;
+}
+
+.App__Header {
+  align-items: center;
+  background-color: #282c34;
+  display: flex;
+  justify-content: space-between;
+  min-height: 80px;
+  padding: 0 30px 0 0;
+}
+
+.App__Logo {
+  height: 60px;
+  pointer-events: none;
+}
+
+.App__Profile {
+  color: white;
+}

@@ -1,0 +1,42 @@
+.Template {
+  display: flex;
+  flex-flow: column;
+}
+
+.Template__Header {
+  align-items: center;
+  background-color: #282c34;
+  display: flex;
+  justify-content: space-between;
+  min-height: 80px;
+  padding: 0 30px 0 0;
+}
+
+.Template__Logo {
+  img {
+    height: 60px;
+    pointer-events: none;
+  }
+}
+
+.Template__Menu {
+  flex-grow: 1;
+}
+
+.Template__MenuLink {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+
+  &_active {
+    font-weight: bold;
+  }
+}
+
+.Template__Profile {
+  color: white;
+}
+
+.Template__Main {
+  flex-grow: 1;
+}
