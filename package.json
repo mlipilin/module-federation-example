@@ -8,9 +8,10 @@
     "lint": "npm run prettier -- --write && npm run eslint -- --fix && npm run stylelint -- --fix",
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(html|js|json|jsx|sass|yml)\"",
     "prepare": "husky install",
-    "start": "concurrently \"npm:start:auth\" \"npm:start:deal\" \"npm:start:request\" \"npm:start:workspace\"",
+    "start": "concurrently \"npm:start:auth\" \"npm:start:deal\" \"npm:start:document\" \"npm:start:request\" \"npm:start:workspace\"",
     "start:auth": "npm run start -w=auth",
     "start:deal": "npm run start -w=deal",
+    "start:document": "npm run start -w=document",
     "start:request": "npm run start -w=request",
     "start:workspace": "npm run start -w=workspace",
     "stylelint": "stylelint --ignore-path .gitignore \"**/*.+(css|scss)\"",
@@ -20,7 +21,7 @@
   "author": "Mikhail Lipilin <lipilin.m@gmail.com>",
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "modules/*"
   ],
   "devDependencies": {
     "@craco/craco": "^7.0.0-alpha.7",

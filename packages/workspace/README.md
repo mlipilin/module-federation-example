@@ -1,1 +1,0 @@
-# @module-federation-example/workspace
