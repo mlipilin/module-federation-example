@@ -6,10 +6,10 @@ module.exports = {
       new ModuleFederationPlugin({
         name: 'moduleRequest',
         // library: { type: 'var', name: 'moduleRequest' },
-        // filename: 'remoteEntry.js',
-        // exposes: {
-        //   './App': './src/App.tsx',
-        // },
+        filename: 'remoteEntry.js',
+        exposes: {
+          './App': './src/App.tsx',
+        },
         remotes: {
           moduleDocument: 'moduleDocument@http://localhost:3303/remoteEntry.js',
         },
