@@ -5,7 +5,6 @@ module.exports = {
     plugins: [
       new ModuleFederationPlugin({
         name: 'moduleDeal',
-        library: { type: 'var', name: 'moduleDeal' },
         filename: 'remoteEntry.js',
         exposes: {
           './App': './src/App.tsx',
@@ -13,7 +12,6 @@ module.exports = {
         shared: {
           react: { singleton: true },
           'react-router-dom': { singleton: true },
-          // 'react-dom': { singleton: true },
         },
       }),
     ],

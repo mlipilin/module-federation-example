@@ -17,7 +17,9 @@ function Request(props: Props) {
     <div {...otherProps} className={styles.Request}>
       <Link to="..">&lt;- Back</Link>
       <h1>Request #{params.id}</h1>
-      <Documents requestId={Number(params.id)} />
+      <React.Suspense>
+        <Documents requestId={Number(params.id)} />
+      </React.Suspense>
     </div>
   )
 }
