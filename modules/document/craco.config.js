@@ -9,7 +9,7 @@ module.exports = {
         exposes: {
           './App': './src/App.tsx',
           // Components
-          './Documents': './src/components/Documents/index.tsx',
+          './Documents': './src/containers/Documents/index.tsx',
         },
         shared: {
           react: { singleton: true },
