@@ -10,7 +10,8 @@ module.exports = {
           './App': './src/App.tsx',
         },
         remotes: {
-          moduleDocument: 'moduleDocument@http://localhost:3303/remoteEntry.js',
+          moduleDocument:
+            'moduleDocument@http://localhost:3304/document/remoteEntry.js',
         },
         shared: {
           react: { singleton: true },
@@ -20,7 +21,7 @@ module.exports = {
     ],
     configure: {
       output: {
-        publicPath: 'auto',
+        publicPath: 'http://localhost:3305/request/',
       },
     },
   },

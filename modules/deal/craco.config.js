@@ -17,7 +17,7 @@ module.exports = {
     ],
     configure: {
       output: {
-        publicPath: 'auto',
+        publicPath: 'http://localhost:3303/deal/',
       },
     },
   },
