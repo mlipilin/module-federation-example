@@ -12,7 +12,7 @@ function App({ prop }: { prop?: string }) {
       I'm rendered ;)
       <Routes>
         <Route
-          path="/"
+          path=""
           element={
             <div>
               DEAL MODULE
@@ -22,7 +22,7 @@ function App({ prop }: { prop?: string }) {
           }
         >
           <Route index element={<Deals />} />
-          <Route path="/:id" element={<Deal />} />
+          <Route path=":id" element={<Deal />} />
         </Route>
       </Routes>
       <hr />

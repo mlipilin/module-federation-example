@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Template />}>
-          <Route path="/" element={<h1>Workspace: main page</h1>} />
+          <Route index element={<h1>Workspace: main page</h1>} />
           <Route
             path="request/*"
             element={
