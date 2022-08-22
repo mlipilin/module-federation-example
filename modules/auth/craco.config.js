@@ -19,7 +19,7 @@ module.exports = {
     ],
     configure: {
       output: {
-        publicPath: 'auto',
+        publicPath: 'http://localhost:3302/auth/',
       },
     },
   },

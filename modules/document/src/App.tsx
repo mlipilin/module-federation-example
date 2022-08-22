@@ -1,11 +1,5 @@
 function App() {
-  return (
-    <>
-      I'm rendered ;)
-      <br />
-      DOCUMENT MODULE
-    </>
-  )
+  return <h1>Document Module</h1>
 }
 
 export default App
